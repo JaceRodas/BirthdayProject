@@ -110,7 +110,7 @@ ul{
 .center-container {
     position: absolute;
     top: 320px;
-    left: 700px;
+    left: 690px;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
