@@ -188,16 +188,16 @@ h1 {
     }
 
     .square {
-        width: 100%; /* Full width for squares */
-        height: 150px; /* Reduced height for smaller screens */
+        width: 100; /* Full width for squares */
+        height: 100px; /* Reduced height for smaller screens */
     }
 
     h1 {
-        font-size: 5vh; /* Smaller font size for headings */
+        font-size: 3vh; /* Smaller font size for headings */
     }
 
     .together-box h2 {
-        font-size: 5vh; /* Smaller font size for "Together" text */
+        font-size: 3vh; /* Smaller font size for "Together" text */
     }
 
     .audio-control {
