@@ -184,12 +184,12 @@ h1 {
     .box {
         width: 50%; /* Full width for boxes on mobile */
         max-width: 300px; /* Limit max width */
-        margin-bottom: 20px; /* Space below each box */
+        margin-bottom: 5px; /* Space below each box */
     }
 
     .square {
-        width: 100; /* Full width for squares */
-        height: 100px; /* Reduced height for smaller screens */
+        width: 100px; /* Full width for squares */
+        height: 150px; /* Reduced height for smaller screens */
     }
 
     h1 {
