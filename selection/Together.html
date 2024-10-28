@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Together</title>
+    <script src="Together/script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="Together/style.css">
+</head>
+<body>
+    <div id="wipe-effect"></div>
+    <!-- Audio control -->
+    <img src="Together/muted-icon.png" id="audio-control" class="audio-control" onclick="toggleAudio()">
+    <audio id="background-music" loop>
+        <source src="Together/bgm-mae.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="image-container">
+        <img src="selection/Together/pic/image(1).jpg" alt="Centered Image" id="image" class="centered-image">
+    </div>
+
+    <!-- Add the button element -->
+    <div onclick="Back()" class="redirect-button"> 
+        <img src="Together/return.png" alt="Button">
+    </div>
+</body>
+</html>
