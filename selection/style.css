@@ -174,3 +174,35 @@ h1 {
         height: 100%;
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center boxes */
+        gap: 20px; /* Smaller gap between boxes */
+    }
+
+    .box {
+        width: 100%; /* Full width for boxes */
+        max-width: 300px; /* Limit max width */
+    }
+
+    .square {
+        width: 100%; /* Full width for squares */
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    h1 {
+        font-size: 6vh; /* Smaller font size for headings */
+    }
+
+    .together-box h2 {
+        font-size: 6vh; /* Smaller font size for "Together" text */
+    }
+
+    .audio-control {
+        width: 50px; /* Smaller audio control icon */
+        bottom: 5px; /* Adjust position */
+        left: 5px; /* Adjust position */
+    }
+}
