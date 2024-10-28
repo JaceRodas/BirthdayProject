@@ -177,15 +177,17 @@ h1 {
 
 @media (max-width: 600px) {
     .container {
-        flex-direction: column; /* Stack boxes vertically */
-        align-items: center; /* Center boxes */
-        gap: 100px;
+        flex-direction: row; /* Stack boxes vertically */
+        align-items: flex-start; /* Center boxes */
+        justify-content: center;
+        gap: 20px;
     }
 
     .box {
         display: flex;
         flex-direction: column;
         align-items: center
+        width: 150px;
     }
 
     .square {
