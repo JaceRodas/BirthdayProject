@@ -1,0 +1,157 @@
+body {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Ensure no scroll bars */
+    position: relative; /* Ensure correct positioning for absolutely positioned elements */
+}
+
+.audio-control {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 60px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Make sure the hearts don't interfere with clicks */
+    z-index: -1; /* Ensure the hearts stay in the background */
+}
+
+.heart {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: red; /* Default color */
+    clip-path: polygon(50% 0%, 61% 18%, 100% 18%, 68% 42%, 79% 75%, 50% 58%, 21% 75%, 32% 42%, 0% 18%, 39% 18%);
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* Additional styles to randomize the hearts */
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+.heart:nth-child(1) { left: 10%; animation-duration: 5s; background: pink; }
+.heart:nth-child(2) { left: 20%; animation-duration: 7s; background: blue; }
+.heart:nth-child(3) { left: 30%; animation-duration: 6s; background: red; }
+.heart:nth-child(4) { left: 40%; animation-duration: 8s; background: green; }
+.heart:nth-child(5) { left: 50%; animation-duration: 4s; background: brown; }
+.heart:nth-child(6) { left: 60%; animation-duration: 7s; background: purple; }
+.heart:nth-child(7) { left: 70%; animation-duration: 6s; background: pink; }
+.heart:nth-child(8) { left: 80%; animation-duration: 5s; background: blue; }
+.heart:nth-child(9) { left: 90%; animation-duration: 7s; background: red; }
+.heart:nth-child(10) { left: 100%; animation-duration: 6s; background: green; }
+
+#wipe-effect {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 25, 26);
+    z-index: 9999;
+    animation: wipeAnimation 1s forwards;
+}
+
+@keyframes wipeAnimation {
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 0;
+    }
+}
+
+#wipe-effect2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 25, 26);
+    z-index: 9999;
+    animation: wipeAnimation2 1s forwards;
+}
+
+@keyframes wipeAnimation2 {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+.redirect-button {
+    position: absolute;
+    top: 530px; /* Adjust to position the button properly */
+    right: 10px;  /* Adjust to position the button properly */
+    display: block;
+    width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+.redirect-button img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    z-index: 1;
+}
+.letter {
+    background: #fff;
+    font: 18px sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: 26px auto 0;
+    max-width: 550px;
+    min-height: 300px;
+    padding: 24px;
+    position: relative;
+    width: 80%;
+  }
+  .letter:before, .letter:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  .letter:before {
+    background: #fafafa;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    left: -5px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+  }
+  .letter:after {
+    background: #f6f6f6;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    right: -3px;
+    top: 1px;
+    transform: rotate(1.4deg);
+  }
