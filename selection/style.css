@@ -179,25 +179,25 @@ h1 {
     .container {
         flex-direction: column; /* Stack boxes vertically */
         align-items: center; /* Center boxes */
-        gap: 20px; /* Smaller gap between boxes */
     }
 
     .box {
-        width: 100%; /* Full width for boxes */
+        width: 50%; /* Full width for boxes on mobile */
         max-width: 300px; /* Limit max width */
+        margin-bottom: 20px; /* Space below each box */
     }
 
     .square {
         width: 100%; /* Full width for squares */
-        height: 200px; /* Adjust height for smaller screens */
+        height: 150px; /* Reduced height for smaller screens */
     }
 
     h1 {
-        font-size: 6vh; /* Smaller font size for headings */
+        font-size: 5vh; /* Smaller font size for headings */
     }
 
     .together-box h2 {
-        font-size: 6vh; /* Smaller font size for "Together" text */
+        font-size: 5vh; /* Smaller font size for "Together" text */
     }
 
     .audio-control {
