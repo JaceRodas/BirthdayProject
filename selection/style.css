@@ -181,24 +181,40 @@ h1 {
         align-items: flex-start; /* Center boxes */
         justify-content: center;
         gap: 20px;
+        width: 100%; /* Full width of the container */
+        padding: 0 10px; /* Padding on sides for smaller screens */
+        box-sizing: border-box;
     }
 
     .box {
         display: flex;
         flex-direction: column;
-        align-items: center
-        width: 150px;
+        align-items: center;
+        width: 120px;
+         margin-bottom: 0;
     }
 
     .square {
         width: 100px; /* Full width for squares */
-        height: 200px; /* Reduced height for smaller screens */
+        height: 150px; /* Reduced height for smaller screens */
+        display: flex; /* Flex display for the image */
+        justify-content: center; /* Center image inside square */
+        align-items: center; 
     }
-
+    
+    .image {
+        width: 100%; /* Ensure image takes the full width */
+        height: auto; /* Maintain aspect ratio */
+    }
     h1 {
         font-size: 3vh; /* Smaller font size for headings */
     }
-
+    
+     .together-box {
+        width: 75%; /* Width for the together button */
+        margin-top: 20px; /* Space above the button */
+        padding: 10px; /* Padding for the button */
+    }
     .together-box h2 {
         font-size: 3vh; /* Smaller font size for "Together" text */
     }
